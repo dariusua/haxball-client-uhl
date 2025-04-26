@@ -4637,7 +4637,7 @@
       a.Ki = function (a) {
         c.j.me(!1);
         c.j.Fb.Eb.td.Nn();
-        c.j.Qa.Gb("Game started" + b(a));
+        c.j.Qa.Gb("Game started now" + b(a));
       };
       a.vf = function (a) {
         null != a && c.j.Qa.Gb("Game stopped" + b(a));
@@ -11106,7 +11106,7 @@
   mb.N =
     "<div class='dialog change-location-view'><h1>Change Location</h1><div class='splitter'><div class='list' data-hook='list'></div><div class='buttons'><button data-hook='change'>Change</button><button data-hook='cancel'>Cancel</button></div></div></div>";
   Da.N =
-    "<div class='chatbox-view'><div data-hook='log' class='log'><p>Controls:<br/>Move: WASD or Arrows<br/>Kick: X, Space, Ctrl, Shift, Numpad 0<br/>View: Numbers 1 to 4</p></div><div class='autocompletebox' data-hook='autocompletebox'></div><div class='input'><input data-hook='input' type='text' /><button data-hook='send'>Send</button></div></div>";
+    "<div class='chatbox-view'><div data-hook='log' class='log'><p>controlerssrsrsrsrsr:<br/>Move: WASD or Arrows<br/>Kick: X, Space, Ctrl, Shift, Numpad 0<br/>View: Numbers 1 to 4</p></div><div class='autocompletebox' data-hook='autocompletebox'></div><div class='input'><input data-hook='input' type='text' /><button data-hook='send'>Send</button></div></div>";
   kb.N =
     "<div class='choose-nickname-view'><img src=\"images/haxball.png\" /><div class='dialog'><h1>Choose nickname</h1><div class='label-input'><label>Nick:</label><input data-hook='input' type='text' /></div><button data-hook='ok'>Ok</button></div></div>";
   jb.N =
