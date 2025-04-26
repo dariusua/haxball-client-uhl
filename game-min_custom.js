@@ -966,7 +966,7 @@
     this.ab = [];
     this.Ar = new R(["Time is", "Up!"], 16777215);
     this.Gq = new R(["Red is", "Victorious!"], 15035990);
-    this.Fq = new R(["Red EDIT 969", "Scores!"], 15035990);
+    this.Fq = new R(["Red", "Scores!"], 15035990);
     this.Cn = new R(["Blue is", "Victorious!"], 625603);
     this.Bn = new R(["Blue", "Scores!"], 625603);
     this.eq = new R(["Game", "Paused"], 16777215);
@@ -1478,7 +1478,7 @@
     window.document.addEventListener("keydown", G(this, this.Bd));
     window.document.addEventListener("keyup", G(this, this.Cd));
     window.onbeforeunload = function () {
-      return "Are you sure you want to leave the room??????";
+      return "Are you sure you want to leave the room?";
     };
     this.ob.ng = function (b) {
       a.ra(b);
@@ -1570,7 +1570,7 @@
     if (0 != c) {
       var d = n.A.rd.L();
       a.gm(d);
-      this.j.Qa.Gb("Extrapolation set to " + c + " msec! YES ITS TRUE");
+      this.j.Qa.Gb("Extrapolation set to " + c + " msec");
     }
   }
   function Ha() {}
@@ -2636,7 +2636,7 @@
     description: function (a) {
       switch (a) {
         case 4001:
-          return "The room was closed, full amount of players.";
+          return "The room was closed.";
         case 4100:
           return "The room is full.";
         case 4101:
@@ -11144,7 +11144,7 @@
   Ya.N =
     "<div class='room-view'><div class='container'><h1 data-hook='room-name'></h1><div class='header-btns'><button data-hook='rec-btn'><i class='icon-circle'></i>Rec</button><button data-hook='link-btn'><i class='icon-link'></i>Link</button><button data-hook='leave-btn'><i class='icon-logout'></i>Leave</button></div><div class='teams'><div class='tools admin-only'><button data-hook='auto-btn'>Auto</button><button data-hook='rand-btn'>Rand</button><button data-hook='lock-btn'>Lock</button><button data-hook='reset-all-btn'>Reset</button></div><div data-hook='red-list'></div><div data-hook='spec-list'></div><div data-hook='blue-list'></div><div class='spacer admin-only'></div></div><div class='settings'><div><label class='lbl'>Time limit</label><select data-hook='time-limit-sel'></select></div><div><label class='lbl'>Score limit</label><select data-hook='score-limit-sel'></select></div><div><label class='lbl'>Stadium</label><label class='val' data-hook='stadium-name'>testing the stadium name</label><button class='admin-only' data-hook='stadium-pick'>Pick</button></div></div><div class='controls admin-only'><button data-hook='start-btn'><i class='icon-play'></i>Start game</button><button data-hook='stop-btn'><i class='icon-stop'></i>Stop game</button><button data-hook='pause-btn'><i class='icon-pause'></i>Pause</button></div></div></div>";
   aa.N =
-    "<div class='dialog settings-view'><h1>Settings</h1><button data-hook='close'>Close</button><div class='tabs'><button data-hook='soundbtn'>Sound</button><button data-hook='videobtn'>Video</button><button data-hook='inputbtn'>Input</button><button data-hook='miscbtn'>Miscisisisisis</button></div><div data-hook='presskey' tabindex='-1'><div>Press a key</div></div><div class='tabcontents'><div class='section' data-hook='miscsec'><div class='loc' data-hook='loc'></div><div class='loc' data-hook='loc-ovr'></div><button data-hook='loc-ovr-btn'></button></div><div class='section' data-hook='soundsec'><div data-hook=\"tsound-main\">Sounds enabled</div><div data-hook=\"tsound-chat\">Chat sound enabled</div><div data-hook=\"tsound-highlight\">Nick highlight sound enabled</div><div data-hook=\"tsound-crowd\">Crowd sound enabled</div></div><div class='section' data-hook='inputsec'></div><div class='section' data-hook='videosec'><div>Viewport Mode:<select data-hook='viewmode'><option>Dynamic</option><option>Restricted 840x410</option><option>Full 1x Zoom</option><option>Full 1.25x Zoom</option><option>Full 1.5x Zoom</option><option>Full 1.75x Zoom</option><option>Full 2x Zoom</option><option>Full 2.25x Zoom</option><option>Full 2.5x Zoom</option></select></div><div>FPS Limit:<select data-hook='fps'><option>None (Recommended)</option><option>30</option></select></div><div>Resolution Scaling:<select data-hook='resscale'><option>100%</option><option>75%</option><option>50%</option><option>25%</option></select></div><div data-hook=\"tvideo-teamcol\">Custom team colors enabled</div><div data-hook=\"tvideo-showindicators\">Show chat indicators</div><div data-hook=\"tvideo-showavatars\">Show player avatars</div></div></div></div>";
+    "<div class='dialog settings-view'><h1>Settings</h1><button data-hook='close'>Close</button><div class='tabs'><button data-hook='soundbtn'>Sound</button><button data-hook='videobtn'>Video</button><button data-hook='inputbtn'>Input</button><button data-hook='miscbtn'>Misc</button></div><div data-hook='presskey' tabindex='-1'><div>Press a key</div></div><div class='tabcontents'><div class='section' data-hook='miscsec'><div class='loc' data-hook='loc'></div><div class='loc' data-hook='loc-ovr'></div><button data-hook='loc-ovr-btn'></button></div><div class='section' data-hook='soundsec'><div data-hook=\"tsound-main\">Sounds enabled</div><div data-hook=\"tsound-chat\">Chat sound enabled</div><div data-hook=\"tsound-highlight\">Nick highlight sound enabled</div><div data-hook=\"tsound-crowd\">Crowd sound enabled</div></div><div class='section' data-hook='inputsec'></div><div class='section' data-hook='videosec'><div>Viewport Mode:<select data-hook='viewmode'><option>Dynamic</option><option>Restricted 840x410</option><option>Full 1x Zoom</option><option>Full 1.25x Zoom</option><option>Full 1.5x Zoom</option><option>Full 1.75x Zoom</option><option>Full 2x Zoom</option><option>Full 2.25x Zoom</option><option>Full 2.5x Zoom</option></select></div><div>FPS Limit:<select data-hook='fps'><option>None (Recommended)</option><option>30</option></select></div><div>Resolution Scaling:<select data-hook='resscale'><option>100%</option><option>75%</option><option>50%</option><option>25%</option></select></div><div data-hook=\"tvideo-teamcol\">Custom team colors enabled</div><div data-hook=\"tvideo-showindicators\">Show chat indicators</div><div data-hook=\"tvideo-showavatars\">Show player avatars</div></div></div></div>";
   aa.$l = 0;
   P.N =
     "<div class='simple-dialog-view'><div class='dialog basic-dialog'><h1 data-hook='title'></h1><p data-hook='content'></p><div class='buttons' data-hook='buttons'></div></div></div>";
