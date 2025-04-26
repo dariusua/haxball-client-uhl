@@ -196,7 +196,7 @@ const setDockBadge = isOSX()
   ? (count?: number | string, bounce = false): void => {
       if (count !== undefined) {
         app.dock.setBadge(count.toString());
-        if (bounce && count > currentBadgeCount) app.dock.bounce();
+        if (bounce && Number(count) > currentBadgeCount) app.dock.bounce();
         currentBadgeCount = typeof count === 'number' ? count : 0;
       }
     }
@@ -409,7 +409,7 @@ async function onReady(): Promise<void> {
   ) {
     const oldBuildWarningText =
       appArgs.oldBuildWarningText ||
-      'This client was built a long time ago. You can ignore this error message and the client will still work just fine, but please contact me on Discord at og#9525 or open a issue on GitHub to ask me to update it!\nThank you';
+      'This client was built a long time ago. You can ignore this error message and the client will still work just fine, but please contact me on Discord at "dariusua" or open a issue on GitHub to ask me to update it!\nThank you';
     dialog
       .showMessageBox(mainWindow, {
         type: 'warning',
@@ -443,7 +443,7 @@ app.on('browser-window-blur', (event: Event, window: BrowserWindow) => {
 
 app.on('browser-window-created', (event: Event, window: BrowserWindow) => {
   log.debug('app.browser-window-created', { event, window });
-  setupNativefierWindow(outputOptionsToWindowOptions(appArgs), window);
+  setupNativefierWindow(outputOptionsToWindowOptions(appArgs, true), window);
 });
 
 app.on('browser-window-focus', (event: Event, window: BrowserWindow) => {
